@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    background-color: rgb(170, 63, 63);
+    background-size: cover; /*estica a imagem de fundo*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; /* altura minima da tela*/
+}
+img{
+    width:25%;
+    height: 800px;
+ 
+}
+
+.conteiner{
+    padding: 20px;
+    background-color:rgba(54, 12, 12, 0.5);/*deixa o fundo trasparente mas o texto não*/
+    display: flex;
+    flex-direction: column; /*deixa os itens um ao lado do outro para usa-lo precisamos primeiro colocar o display como flex*/
+    border: 5px solid rgb(250, 84, 84);
+    border-radius: 35px;
+    width: 350px;
+    height: 300px;
+    align-items: center; /*alinha na horizontal*/
+    justify-content: center;/*alinha na vertical*/
+    margin-left: 5px;   
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    border: none;
+    transition: opacity 0.5s ease-in-out; /*especifica o tempo em que a opacidade vai aparecer no botão.
+     o ease-in-out aplica tanto no começo quando a seta chega em cima do botao quanto no fim
+      quando ela sai de cima do botao*/
+}
+button:hover{ /*muda a opacidade quando o mouse passa por cima do botão*/
+    opacity: 0.7;
+}
+.botao{
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /*adiciona uma distancia entres os itens para usar o gap tem que usar o display flex*/
+    margin-top: 22px;
+    
+}
+#stone{
+   background-color: rgb(170, 63, 63); 
+}
+
+#paper{
+    background-color: rgba(54, 12, 12, 0.5); 
+ }
+
+ #scissors{
+    background-color: rgb(250, 84, 84); 
+ }
+ p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.your-score span{
+    color:white;
+}
+.machine-score span{
+    color:red;
+}
+.result{
+    font-size: 22px;
+}
